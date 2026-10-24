@@ -81,3 +81,19 @@ input[aria-invalid="true"] { border-color: #ad604b; }
   .race-card { padding: 18px 13px; }
   .race-card strong { font-size: 23px; }
 }
+
+.pwa-panel { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 22px; margin: 0 0 22px; padding: 17px 20px; background: #edf1e4; border: 1px solid #d9dfcc; border-radius: 12px; }
+.pwa-copy { flex: 1 1 250px; }
+.pwa-copy > strong { font-size: 13px; font-weight: 600; color: var(--green); }
+.pwa-copy > p { margin: 3px 0 0; font-size: 12px; color: #59664e; line-height: 1.6; }
+.pwa-button, .pwa-later { min-height: 44px; border: 1px solid #b8c6a5; border-radius: 7px; background: #f9fbf5; color: var(--green); padding: 9px 13px; font-size: 12px; font-weight: 600; }
+.pwa-button:disabled, .pwa-later:disabled { opacity: .5; cursor: wait; }
+.install-help { font-size: 12px; color: var(--green); }
+.install-help[open] { flex-basis: 100%; }
+.install-help summary { cursor: pointer; min-height: 44px; align-content: center; border-radius: 4px; font-weight: 600; }
+.install-help summary:focus-visible { outline: 3px solid #a8c774; outline-offset: 3px; }
+.install-help p { margin: 8px 0 0; line-height: 1.7; max-width: 65ch; }
+.pwa-update { display: flex; align-items: center; flex-wrap: wrap; flex-basis: 100%; gap: 10px; padding-top: 12px; border-top: 1px solid #cfd8bf; font-size: 12px; color: var(--green); }
+.pwa-update > span { flex: 1 1 200px; }
+.pwa-later { background: transparent; border-color: transparent; }
+@media (display-mode: standalone) { .install-help { display: none; } }
